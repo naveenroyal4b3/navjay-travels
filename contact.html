@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact | Navjay Travels</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
+  <!-- ===== Header ===== -->
   <header>
     <div class="container nav">
       <h1 class="logo">Navjay Travels</h1>
@@ -22,18 +23,25 @@
     </div>
   </header>
 
+  <!-- ===== Contact Section ===== -->
   <section class="contact">
     <div class="container">
       <h2>Contact Us</h2>
-      <form>
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea placeholder="Your Message" required></textarea>
+      <form action="https://formspree.io/f/xgvpebrd" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="text" name="contact_number" placeholder="Contact Number" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="text" name="city" placeholder="City">
+        <input type="text" name="country" placeholder="Country">
+        <input type="text" name="referenced_by" placeholder="Referenced By (Name)">
+        <input type="text" name="reference_contact" placeholder="Reference Contact Number">
         <button type="submit" class="btn">Send Message</button>
       </form>
+      <p class="form-note">All fields marked required must be filled.</p>
     </div>
   </section>
 
+  <!-- ===== Footer ===== -->
   <footer>
     <p>© 2025 Navjay Travels | Designed with ❤️ for travelers</p>
   </footer>
